@@ -119,3 +119,5 @@ const FillGroup = ({ rating }) =>
       </g>
     );
   });
+
+export default StarRating;
