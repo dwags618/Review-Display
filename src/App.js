@@ -1,54 +1,64 @@
 import * as React from "react";
-import StarRating from './star-rating';
+import {StarRating} from './star-rating';
+import {VerifiedBuyer, VerifiedReviewer, StaffReviewer, ExpertReviewer} from './icons';
+import {Thumb} from './icons';
 import Table, {TableBody, TableCell, TableHead, TableRow} from 'material-ui/Table'
 import Paper from 'material-ui/Paper'
+import Typography from 'material-ui/Typography';
+import Divider from 'material-ui/Divider';
+import { withStyles } from 'material-ui/styles';
 
-const data = [{
-    name: 'Tanner Linsley',
-    age: 26,
-    friend: {
-      name: 'Jason Maurer',
-      age: 23,
-    }
-  }]
+const styles = {
+  page: {
+    paddingTop: 30
+  },
+  icon: {
+  	width: 200,
+  	height: 40
+  }
+}
 
-  const columns = [{
-    Header: 'Name',
-    accessor: 'name' // String-based value accessors!
-  }, {
-    Header: 'Age',
-    accessor: 'age',
-    Cell: props => <span className='number'>{props.value}</span> // Custom cell components!
-  }, {
-    id: 'friendName', // Required because our accessor is not a string
-    Header: 'Friend Name',
-    accessor: d => d.friend.name // Custom value accessors!
-  }, {
-    Header: props => <span>Friend Age</span>, // Custom header components!
-    accessor: 'friend.age'
-  }]
+class App extends React.Component {
+  componentDidMount() {
+    
+  }
 
-export default () => 
+  render() {
+    const { classes } = this.props;
 
+   
+
+    return (
+      <div className={classes.page}>
 <div>
 	<div>
 		
 	</div>
+	<Typography variant="display1">
+        {'Review Display'}
+      </Typography>
 	<div>
-	Review Display
-	</div>
-	<div>
-	<Paper>
-        <Table>
-          
-          <TableBody>
-           <StarRating rating={5} style={{width:'200px', height:'40px'}}>
+        
+           <StarRating rating={5} className={classes.icon}>
+		</StarRating>
+		<VerifiedBuyer className={classes.icon}>
+		</VerifiedBuyer>
+		<Thumb className={classes.icon}>
+		</Thumb>
+		<div>
+		{'Dylan'}
+		</div>
+          <Divider />
+          <StarRating rating={5} className={classes.icon}>
 		</StarRating>
 		<div>
-		Dylan
+		{'Dylan'}
 		</div>
-          </TableBody>
-        </Table>
-        </Paper>
 	</div>
 </div>
+</div>
+    );
+  }
+}
+
+export default withStyles(styles)(App);
