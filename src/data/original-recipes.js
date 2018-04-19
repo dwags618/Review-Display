@@ -1,26 +1,5 @@
-module.exports = exports = {
-  page_id: "633298",
-  rollup: {
-    properties: [],
-    rating_histogram: [7, 3, 0, 3, 29],
-    average_rating: 4.05,
-    review_count: 42,
-    media: [],
-    faceoff_positive: {
-      comments:
-        "Just as good as any other tank on the market. There's just variability between how many balloons you can fill. This is partially due to user error, but it's still a bit frustrating when planning a party. That being said, it can be more cost effective and more time effective if done right. It's great if you have a lot of helpers! Give it a shot, you can always fill the rest at your local grocery store.",
-      headline: "Give it a shot",
-      rating: 4
-    },
-    faceoff_negative: {
-      comments:
-        "The helium tank was fine but I purposely ordered online for in store pick up as I knew I would be in a hurry.. when I arrived at the store only one tank was ready.. I was told they didn't have an additional one for me even though the email I received said my order was ready.. when I mentioned my problem (as now I don't have enough helium for all the balloons and I'm on my way to the event)  I was told to drive to a different store in the opposite direction .. I then asked to speak to a manager who (after some searching) found one in the back.. I was disappointed that I had to ask for help and that the order wasn't ready as I was lead to believe.. I will think twice before ordering on line from that particular store..",
-      headline: 'Order "ready for pickup" isn\'t always complete',
-      rating: 2
-    }
-  },
-  reviews: [
-    {
+var originalRecipes = [
+  {
       review_id: 156689054,
       internal_review_id: 143299180,
       details: {
@@ -274,5 +253,6 @@ module.exports = exports = {
         helpful_score: 1351
       }
     }
-  ]
-};
+];
+
+export default originalRecipes;

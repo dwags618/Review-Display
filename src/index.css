@@ -1,5 +1,151 @@
+/******* BASIC STYLES *******/
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+	/*background-color: #FFF;*/
+	font-size: 1.2em;
+	display: flex;
+	justify-content: left;
 }
+
+ul {
+	list-style-type: none;
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  font-size: 0.8em;
+	color: #FFF;
+	cursor: pointer;
+	margin: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+input,
+textarea {
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	padding: 3px;
+	font-size: 0.8em;
+}
+
+p {
+	font-size: 0.9em;
+}
+
+hr {
+	margin: 0 10px;
+}
+
+/* new css */
+/*$aqua: #7FDBFF;
+$olive: #3D9970;
+$maroon: #85144b;
+$navy: #001f3f;
+$silver: #DDDDDD;
+$gray: #AAA;
+$orange: #FF851B;*/
+
+
+/******* MAIN STYLES *******/
+
+.m-font {
+	font-size: 1.2em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.IndexView {
+  min-width: 600px;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+
+}
+
+.IndexView ul {
+	padding: 0;
+}
+
+.recipe-listing {
+	
+	border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+}
+
+.recipe-listing .detail-toggle {
+	cursor: pointer;
+	user-select: none;
+}
+
+.recipe-details {
+	
+
+  width: 90%;
+	color: #000;
+  background-color: #FFF;
+	margin: 3px auto;
+	padding: 10px 0;
+}
+
+
+
+
+.recipe-details h3 {
+  padding-top: 2%;
+  margin: 3px;
+}
+
+.recipe-details ul {
+	width: 75%;
+	margin: 10px auto;
+  /*margin: 0px 0px;*/
+  /*padding: 5%;*/
+  background-color: #FFF;
+	border-radius: 7px;
+}
+
+.recipe-details ul li {
+	/*margin-top: 0px;
+	margin-bottom: 0px;*/
+	margin: 0 auto;
+	padding: 0px;
+	border-bottom: 1px solid #DDD;
+	/*background-color: #3D9970;*/
+	/*width: 80%;*/
+}
+
+.recipe-details ul li:last-child {
+	border-bottom: none;
+}
+
+.details-footer {
+	margin: 10px 0;
+}
+
+
+
+
+
+
+
+#new-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

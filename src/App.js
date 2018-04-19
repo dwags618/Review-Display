@@ -8,6 +8,10 @@ import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { withStyles } from 'material-ui/styles';
 import Datasort from 'react-data-sort'
+import IndexView from './components/index-view';
+import originalRecipes from './data/original-recipes';
+
+
 
 const styles = {
   page: {
@@ -28,36 +32,35 @@ class App extends React.Component {
 
     // set the initial component state
     this.state = {
-      reviews: ''
+      recipes: originalRecipes
 
   }
 }
   componentDidMount() {
-    fetch('/reviews')
-            .then(res => {
-                console.log(res);
-                return res.json()
-             })
-            .then(data => { 
-                this.setState({ reviews:data.reviews })
-             });
+    // fetch('/reviews')
+    //         .then(res => {
+    //             console.log(res);
+    //             return res.json()
+    //          })
+    //         .then(data => { 
+    //             this.setState({ reviews:data.reviews })
+    //          });
   }
 
   render() {
-  	console.log(this.state.reviews)
-    const { classes } = this.props;
-
-   const tableData = [{ ic: 1, name: 'b', ic: 2, name: 'c', id: 3, name: 'a' }]
 
     return (
-      <Table>
-          <TableHead>
-            
-          </TableHead>
-          <TableBody>
-            {this.state.reviews}
-          </TableBody>
-        </Table>
+      <div className="App">
+				<div id="new-container"></div>
+				<div className="App-header">
+				{/* <img src={logo} className="App-logo" alt="logo" /> */}
+				<h2>Recipe Box App</h2>
+			</div>
+				<div id="root"></div>
+				<IndexView
+					recipeBank={this.state.recipes}
+					 />
+      </div>
     );
   }
 }
