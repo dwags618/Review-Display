@@ -5,7 +5,7 @@ body {
   padding: 0;
   font-family: sans-serif;
 	/*background-color: #FFF;*/
-	font-size: 1.2em;
+	font-size: 0.9em;
 	display: flex;
 	justify-content: left;
 }
@@ -54,21 +54,28 @@ $orange: #FF851B;*/
 
 /******* MAIN STYLES *******/
 
-.m-font {
-	font-size: 1.2em;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
+
 
 .App {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: center;
+  align-items: left;
 }
 
 .icon {
-	width: 50px;
+	width: 100px;
+
+	margin: 0px 40px;
+
+}
+.headline {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.App-header {
+	margin: 0px 40px;
 }
 
 .IndexView {
@@ -87,8 +94,9 @@ $orange: #FF851B;*/
 .review-listing {
 	
 	border-radius: 5px;
-	margin: 10px;
-	padding: 5px;
+	margin: 10px 40px;
+	padding: -10px;
+	width: 60%;
 }
 
 
@@ -144,9 +152,5 @@ $orange: #FF851B;*/
 
 
 
-#new-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 

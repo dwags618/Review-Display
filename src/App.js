@@ -15,7 +15,7 @@ class App extends React.Component {
   		}
 	}
 
-	 componentDidMount() {
+	componentDidMount() {
 	    fetch('/reviews')
 	            .then(res => {
 	                console.log(res);
@@ -24,7 +24,7 @@ class App extends React.Component {
 	            .then(data => { 
 	                this.setState({ reviews:data.reviews })
 	             });
-	 }
+	}
 
   	render() {
 	    return (
@@ -37,9 +37,10 @@ class App extends React.Component {
 				<IndexView
 					reviewBank={this.state.reviews}
 				/>
+				<Divider/>
 	      </div>
 	    );
-  }
+  	}
 }
 
 export default App;

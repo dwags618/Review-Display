@@ -4,12 +4,14 @@ class ReviewDetails extends Component {
 	
 	render() {
 		return (
-			<div className="review-details">
+			<div>
+				<div className="headline">
 				<ul>
 					{this.props.headline.map((item) => {
 						return <li key={item}><p>{item}</p></li>
 					})}
 				</ul>
+				</div>
 				<ul>
 					{this.props.comments.map((item) => {
 						return <li key={item}><p>{item}</p></li>
