@@ -67,6 +67,10 @@ $orange: #FF851B;*/
   align-items: center;
 }
 
+.icon {
+	width: 50px;
+}
+
 .IndexView {
   min-width: 600px;
   width: 100%;

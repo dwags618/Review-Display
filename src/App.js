@@ -11,8 +11,6 @@ import Datasort from 'react-data-sort'
 import IndexView from './components/index-view';
 import originalRecipes from './data/original-recipes';
 
-
-
 const styles = {
   page: {
     paddingTop: 30
@@ -22,8 +20,6 @@ const styles = {
   	height: 40
   }
 }
-
-
 
 class App extends React.Component {
 

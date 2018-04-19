@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReviewListing from './review-listing';
+import {VerifiedBuyer, VerifiedReviewer, StaffReviewer, ExpertReviewer} from '../icons';
+import {Thumb} from '../icons';
+import {StarRating} from '../star-rating';
 
 class IndexView extends Component {
 
@@ -16,7 +19,22 @@ class IndexView extends Component {
 				<div className="IndexView">
 					<ul id="IndexViewList">
 						{this.props.reviewBank.map((item) =>
-							// <li>{item.name}</li>
+							<div>
+							<div className="icon">
+							<StarRating rating={item.metrics.rating} />
+							</div>
+							<div className="icon">
+							<VerifiedBuyer />
+							</div>
+							<div className="icon">
+							<VerifiedReviewer />
+							</div>
+							<div className="icon">
+							<StaffReviewer />
+							</div>
+							<div className="icon">
+							<ExpertReviewer />
+							</div>
 							<ReviewListing
 								key={item.review_id}
 								name={item.review_id}
@@ -24,6 +42,7 @@ class IndexView extends Component {
 								comments={item.details.comments}
 								nickname={item.details.nickname}
 								location={item.details.location} />
+								</div>
 						)}
 					</ul>
 
