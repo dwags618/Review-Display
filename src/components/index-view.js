@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RecipeListing from './recipe-listing';
+import RecipeListing from './review-listing';
 
 class IndexView extends Component {
 
@@ -9,7 +9,6 @@ class IndexView extends Component {
 	}
 
 	render() {
-		// var localStorageTest = [{ key: "1", name: 'Lala' }];
 		if (this.props.recipeBank === '') {
 			return <div>Loading...</div>
 		} else {
