@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 class ReviewDetails extends Component {
-	constructor(props) {
-		super(props);
-
-		
-	}
+	
 
 	
 
