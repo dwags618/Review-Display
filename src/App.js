@@ -7,6 +7,7 @@ import Paper from 'material-ui/Paper'
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { withStyles } from 'material-ui/styles';
+import Datasort from 'react-data-sort'
 
 const styles = {
   page: {
@@ -18,45 +19,45 @@ const styles = {
   }
 }
 
+
+
 class App extends React.Component {
+
+	constructor(props, context) {
+    super(props, context);
+
+    // set the initial component state
+    this.state = {
+      reviews: ''
+
+  }
+}
   componentDidMount() {
-    
+    fetch('/reviews')
+            .then(res => {
+                console.log(res);
+                return res.json()
+             })
+            .then(data => { 
+                this.setState({ reviews:data.reviews })
+             });
   }
 
   render() {
+  	console.log(this.state.reviews)
     const { classes } = this.props;
 
-   
+   const tableData = [{ ic: 1, name: 'b', ic: 2, name: 'c', id: 3, name: 'a' }]
 
     return (
-      <div className={classes.page}>
-<div>
-	<div>
-		
-	</div>
-	<Typography variant="display1">
-        {'Review Display'}
-      </Typography>
-	<div>
-        
-           <StarRating rating={5} className={classes.icon}>
-		</StarRating>
-		<VerifiedBuyer className={classes.icon}>
-		</VerifiedBuyer>
-		<Thumb className={classes.icon}>
-		</Thumb>
-		<div>
-		{'Dylan'}
-		</div>
-          <Divider />
-          <StarRating rating={5} className={classes.icon}>
-		</StarRating>
-		<div>
-		{'Dylan'}
-		</div>
-	</div>
-</div>
-</div>
+      <Table>
+          <TableHead>
+            
+          </TableHead>
+          <TableBody>
+            {this.state.reviews}
+          </TableBody>
+        </Table>
     );
   }
 }
