@@ -80,19 +80,16 @@ $orange: #FF851B;*/
 	padding: 0;
 }
 
-.recipe-listing {
+.review-listing {
 	
 	border-radius: 5px;
 	margin: 10px;
 	padding: 5px;
 }
 
-.recipe-listing .detail-toggle {
-	cursor: pointer;
-	user-select: none;
-}
 
-.recipe-details {
+
+.review-details {
 	
 
   width: 90%;
@@ -105,12 +102,12 @@ $orange: #FF851B;*/
 
 
 
-.recipe-details h3 {
+.review-details h3 {
   padding-top: 2%;
   margin: 3px;
 }
 
-.recipe-details ul {
+.review-details ul {
 	width: 75%;
 	margin: 10px auto;
   /*margin: 0px 0px;*/
@@ -119,7 +116,7 @@ $orange: #FF851B;*/
 	border-radius: 7px;
 }
 
-.recipe-details ul li {
+.review-details ul li {
 	/*margin-top: 0px;
 	margin-bottom: 0px;*/
 	margin: 0 auto;
@@ -129,7 +126,7 @@ $orange: #FF851B;*/
 	/*width: 80%;*/
 }
 
-.recipe-details ul li:last-child {
+.review-details ul li:last-child {
 	border-bottom: none;
 }
 

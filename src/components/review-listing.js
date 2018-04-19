@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import RecipeDetails from './review-details';
+import ReviewDetails from './review-details';
 
-class RecipeListing extends Component {
+class ReviewListing extends Component {
 	
 
 	
@@ -10,8 +10,8 @@ class RecipeListing extends Component {
 
 		
 			return (
-				<li className="recipe-listing">
-					<RecipeDetails
+				<li className="review-listing">
+					<ReviewDetails
 						headline={this.props.headline}
 						comments={this.props.comments}
 						nickname={this.props.nickname}
@@ -24,4 +24,4 @@ class RecipeListing extends Component {
 	}
 }
 
-export default RecipeListing;
+export default ReviewListing;

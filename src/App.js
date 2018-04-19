@@ -53,12 +53,11 @@ class App extends React.Component {
       <div className="App">
 				<div id="new-container"></div>
 				<div className="App-header">
-				{/* <img src={logo} className="App-logo" alt="logo" /> */}
 				<h2>Review Display</h2>
 			</div>
 				<div id="root"></div>
 				<IndexView
-					recipeBank={this.state.reviews}
+					reviewBank={this.state.reviews}
 					 />
       </div>
     );

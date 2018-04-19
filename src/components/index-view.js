@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import RecipeListing from './review-listing';
+import ReviewListing from './review-listing';
 
 class IndexView extends Component {
 
@@ -9,15 +9,15 @@ class IndexView extends Component {
 	}
 
 	render() {
-		if (this.props.recipeBank === '') {
+		if (this.props.reviewBank === '') {
 			return <div>Loading...</div>
 		} else {
 			return (
 				<div className="IndexView">
 					<ul id="IndexViewList">
-						{this.props.recipeBank.map((item) =>
+						{this.props.reviewBank.map((item) =>
 							// <li>{item.name}</li>
-							<RecipeListing
+							<ReviewListing
 								key={item.review_id}
 								name={item.review_id}
 								headline={item.details.headline}

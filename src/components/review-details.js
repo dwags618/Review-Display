@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-class RecipeDetails extends Component {
+class ReviewDetails extends Component {
 	constructor(props) {
 		super(props);
 
@@ -12,7 +12,7 @@ class RecipeDetails extends Component {
 
 	render() {
 		return (
-			<div className="recipe-details">
+			<div className="review-details">
 				<ul>
 					{this.props.headline.map((item) => {
 						return <li key={item}><p>{item}</p></li>
@@ -39,4 +39,4 @@ class RecipeDetails extends Component {
 	}
 }
 
-export default RecipeDetails;
+export default ReviewDetails;
