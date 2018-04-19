@@ -6,8 +6,6 @@ import {StarRating} from '../star-rating';
 
 class IndexView extends Component {
 
-	
-
 	render() {
 		if (this.props.reviewBank === '') {
 			return <div>Loading...</div>
@@ -42,11 +40,9 @@ class IndexView extends Component {
 								</div>
 						)}
 					</ul>
-
 				</div>
 			)
 		}
-
 	}
 }
 

@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 class ReviewDetails extends Component {
 	
-
-	
-
 	render() {
 		return (
 			<div className="review-details">
