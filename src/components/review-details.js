@@ -54,11 +54,32 @@ class ReviewDetails extends Component {
 						console.log(item)
 						return( 
 							<li key={item}>
-							{ item.toString()==='true' &&  <StaffReviewer/>  }
+							{ item.toString()==='true' &&  <div> StaffReviewer <StaffReviewer className="badge"/> </div>  }
 							</li>
 							)
 					})}
 				</ul>
+				<ul>
+					{this.props.verifiedbuyer.map((item) => {
+						console.log(item)
+						return( 
+							<li key={item}>
+							{ item.toString()==='true' &&  <div> Verified Buyer <VerifiedBuyer className="badge"/> </div>  }
+							</li>
+							)
+					})}
+				</ul>
+				<ul>
+					{this.props.verifiedreviewer.map((item) => {
+						console.log(item)
+						return( 
+							<li key={item}>
+							{ item.toString()==='true' &&  <div> Verified Reviewer <VerifiedReviewer className="badge"/> </div>  }
+							</li>
+							)
+					})}
+				</ul>
+
 				</div>
 			</div>
 		)

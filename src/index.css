@@ -78,6 +78,10 @@ $orange: #FF851B;*/
 	margin: 0px 40px;
 }
 
+.badge {
+	width: 20px;
+}
+
 .divider {
 	margin: 5px 0px;
 }

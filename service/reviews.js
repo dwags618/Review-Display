@@ -35,8 +35,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -60,8 +60,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: false,
-        is_verified_reviewer: true
+        is_verified_buyer: [false],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -86,8 +86,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: false,
-        is_verified_reviewer: false
+        is_verified_buyer: [false],
+        is_verified_reviewer: [false]
       },
       media: [],
       metrics: {
@@ -112,8 +112,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -137,8 +137,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -162,8 +162,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -187,8 +187,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -212,8 +212,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [true],
-        is_verified_buyer: false,
-        is_verified_reviewer: false
+        is_verified_buyer: [false],
+        is_verified_reviewer: [false]
       },
       media: [],
       metrics: {
@@ -237,8 +237,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {
@@ -263,8 +263,8 @@ module.exports = exports = {
       },
       badges: {
         is_staff_reviewer: [false],
-        is_verified_buyer: true,
-        is_verified_reviewer: true
+        is_verified_buyer: [true],
+        is_verified_reviewer: [true]
       },
       media: [],
       metrics: {

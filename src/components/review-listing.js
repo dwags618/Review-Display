@@ -16,6 +16,8 @@ class ReviewListing extends Component {
 					location={this.props.location}
 					name={this.props.name}
 					staffreviewer={this.props.staffreviewer}
+					verifiedreviewer={this.props.verifiedreviewer}
+					verifiedbuyer={this.props.verifiedbuyer}
 					created={this.props.created}
 					/>
 			</li>
