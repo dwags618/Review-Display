@@ -66,7 +66,7 @@ $orange: #FF851B;*/
 .icon {
 	width: 100px;
 
-	margin: 0px 40px;
+	margin: 25px 40px;
 
 }
 .headline {
@@ -76,6 +76,10 @@ $orange: #FF851B;*/
 
 .App-header {
 	margin: 0px 40px;
+}
+
+.divider {
+	margin: 5px 0px;
 }
 
 .IndexView {
@@ -91,12 +95,17 @@ $orange: #FF851B;*/
 	padding: 0;
 }
 
+.left-column {
+	display:inline-block;
+	float:left;
+	width: 70%;
+}
+
 .review-listing {
 	
 	border-radius: 5px;
 	margin: 10px 40px;
-	padding: -10px;
-	width: 60%;
+	width: 90%;
 }
 
 
@@ -140,6 +149,13 @@ $orange: #FF851B;*/
 
 .review-details ul li:last-child {
 	border-bottom: none;
+}
+
+.right-column {
+	display:inline-block;
+	float:left;
+	margin: 45px 0;
+	width: 20%;
 }
 
 .details-footer {

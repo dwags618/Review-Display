@@ -6059,9 +6059,9 @@ react-swipeable-views@^0.12.9:
     react-swipeable-views-utils "^0.12.13"
     warning "^3.0.0"
 
-react-table@^6.7.6:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/react-table/-/react-table-6.8.0.tgz#5ce402eb735df68534c03dabb3faa031478b6a58"
+react-table@^6.8.2:
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-6.8.2.tgz#3a5aefabc85953300d16786fa307c30610db9adc"
   dependencies:
     classnames "^2.2.5"
 

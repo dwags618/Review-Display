@@ -1,7 +1,5 @@
 import * as React from "react";
 import {Thumb} from './icons';
-import Divider from 'material-ui/Divider';
-import Datasort from 'react-data-sort'
 import IndexView from './components/index-view';
 
 class App extends React.Component {
@@ -37,7 +35,6 @@ class App extends React.Component {
 				<IndexView
 					reviewBank={this.state.reviews}
 				/>
-				<Divider/>
 	      </div>
 	    );
   	}

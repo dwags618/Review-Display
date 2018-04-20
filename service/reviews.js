@@ -30,11 +30,11 @@ module.exports = exports = {
         nickname: ["Kenneth"],
         properties: [],
         location: ["Chicago, IL"],
-        created_date: 1522547757171,
+        created: ["1522547757171"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -42,7 +42,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 1463
       }
     },
@@ -55,11 +55,11 @@ module.exports = exports = {
         nickname: ["Jessica"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1522414649981,
+        created: ["1522414649981"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: false,
         is_verified_reviewer: true
       },
@@ -67,7 +67,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 3,
+        rating: [3],
         helpful_score: 1073
       }
     },
@@ -81,11 +81,11 @@ module.exports = exports = {
         nickname: ["LI"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1522369386029,
+        created: ["1522369386029"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: false,
         is_verified_reviewer: false
       },
@@ -93,7 +93,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 2,
+        rating: [2],
         helpful_score: 1833
       }
     },
@@ -107,11 +107,11 @@ module.exports = exports = {
         nickname: ["Theresa"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1522328944470,
+        created: ["1522328944470"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -119,7 +119,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 1475
       }
     },
@@ -132,11 +132,11 @@ module.exports = exports = {
         nickname: ["SHERIE"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1522275076937,
+        created: ["1522275076937"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -144,7 +144,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 4,
+        rating: [4],
         helpful_score: 1107
       }
     },
@@ -157,11 +157,11 @@ module.exports = exports = {
         nickname: ["Bethania"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1522196369783,
+        created: ["1522196369783"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -169,7 +169,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 841
       }
     },
@@ -182,11 +182,11 @@ module.exports = exports = {
         nickname: ["Diana"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1520916389829,
+        created: ["1520916389829"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -194,7 +194,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 2,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 871
       }
     },
@@ -207,11 +207,11 @@ module.exports = exports = {
         nickname: ["Jess"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1520893190769,
+        created: ["1520893190769"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: true,
+        is_staff_reviewer: [true],
         is_verified_buyer: false,
         is_verified_reviewer: false
       },
@@ -219,7 +219,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 0,
         not_helpful_votes: 1,
-        rating: 5,
+        rating: [5],
         helpful_score: 1026
       }
     },
@@ -232,11 +232,11 @@ module.exports = exports = {
         nickname: ["Rebecca"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1520646755694,
+        created: ["1520646755694"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -244,7 +244,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 1,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 1101
       }
     },
@@ -258,11 +258,11 @@ module.exports = exports = {
         nickname: ["Patricia"],
         properties: [],
         location: ["undisclosed"],
-        created_date: 1520553859505,
+        created: ["1520553859505"],
         product_page_id: "633298"
       },
       badges: {
-        is_staff_reviewer: false,
+        is_staff_reviewer: [false],
         is_verified_buyer: true,
         is_verified_reviewer: true
       },
@@ -270,7 +270,7 @@ module.exports = exports = {
       metrics: {
         helpful_votes: 1,
         not_helpful_votes: 0,
-        rating: 5,
+        rating: [5],
         helpful_score: 1351
       }
     }
