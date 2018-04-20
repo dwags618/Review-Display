@@ -20,6 +20,8 @@ class ReviewDetails extends Component {
 						return <li key={item}><p>{item}</p></li>
 					})}
 				</ul>
+				<br/>
+				<div>Was this review helpful to you?</div>
 				</div>
 				<div className="right-column">
 				<ul>

@@ -37,6 +37,7 @@ class IndexView extends Component {
 								created={item.details.created}
 								/>
 								</div>
+								
 								</div>
 						)}
 

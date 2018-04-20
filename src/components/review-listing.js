@@ -21,6 +21,7 @@ class ReviewListing extends Component {
 					created={this.props.created}
 					/>
 			</li>
+			
 			</div>
 		);
 	}
