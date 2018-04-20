@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import ReviewDetails from './review-details';
 import Divider from 'material-ui/Divider';
 
-
 class ReviewListing extends Component {
 	
 	render() {
@@ -19,6 +18,7 @@ class ReviewListing extends Component {
 					verifiedreviewer={this.props.verifiedreviewer}
 					verifiedbuyer={this.props.verifiedbuyer}
 					created={this.props.created}
+					rating={this.props.rating}
 					/>
 			</li>
 			

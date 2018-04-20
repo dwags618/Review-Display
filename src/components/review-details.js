@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import {VerifiedBuyer, VerifiedReviewer, StaffReviewer} from '../icons';
+import {StarRating} from '../star-rating';
 
 class ReviewDetails extends Component {
 	
 	render() {
 		return (
 			<div>
-
+			<div className="icon">
+			{this.props.rating.map((item) => {
+				return(<li key={item}>
+							<StarRating rating={item} />
+							</li>)
+			})}
+			
+							
+							</div>
 				<div className="left-column">
 				<div className="headline">
 				<ul>
@@ -56,7 +65,7 @@ class ReviewDetails extends Component {
 						console.log(item)
 						return( 
 							<li key={item}>
-							{ item.toString()==='true' &&  <div> StaffReviewer <StaffReviewer className="badge"/> </div>  }
+							{ item.toString()==='true' &&  <div> Staff Reviewer <StaffReviewer className="badge"/> </div>  }
 							</li>
 							)
 					})}
@@ -81,7 +90,6 @@ class ReviewDetails extends Component {
 							)
 					})}
 				</ul>
-
 				</div>
 			</div>
 		)

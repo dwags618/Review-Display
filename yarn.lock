@@ -6024,6 +6024,10 @@ react-scrollbar-size@^2.0.2:
     react-event-listener "^0.5.1"
     stifle "^1.0.2"
 
+react-sort@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/react-sort/-/react-sort-0.0.0.tgz#6ea317a9c42077f851f1721c40a07c5ddb4bb25d"
+
 react-splash@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/react-splash/-/react-splash-0.1.0.tgz#363f1f7be9b3816e7dc9c3bb9bef91927fca7879"
