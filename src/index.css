@@ -80,6 +80,19 @@ $orange: #FF851B;*/
 	width: 20px;
 }
 
+.thumbdown {
+	width: 40px;
+	border-radius: 0px;
+	border: 1px solid #DDD;
+	transform: rotate(180deg) scaleX(1);
+}
+
+.thumbup {
+	width: 40px;
+	border-radius: 0px;
+	border: 1px solid #DDD;
+}
+
 .divider {
 	margin: 5px 0px;
 }

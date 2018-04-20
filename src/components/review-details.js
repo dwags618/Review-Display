@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {VerifiedBuyer, VerifiedReviewer, StaffReviewer} from '../icons';
+import {VerifiedBuyer, VerifiedReviewer, StaffReviewer, Thumb} from '../icons';
 import {StarRating} from '../star-rating';
 
 class ReviewDetails extends Component {
@@ -31,6 +31,12 @@ class ReviewDetails extends Component {
 				</ul>
 				<br/>
 				<div>Was this review helpful to you?</div>
+				<br/>
+
+
+				<Thumb onClick={this.myfunction} className="thumbup"/>
+				<Thumb onClick={this.myfunction} className="thumbdown"/>
+
 				</div>
 				<div className="right-column">
 				<ul>

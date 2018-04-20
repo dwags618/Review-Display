@@ -15,7 +15,6 @@ class IndexView extends Component {
 						{this.props.reviewBank.map((item) =>
 							<div>
 							<div>
-							
 							<ReviewListing
 								key={item.review_id}
 								name={item.review_id}
