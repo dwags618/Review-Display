@@ -11,18 +11,16 @@ class ReviewDetails extends Component {
 			{this.props.rating.map((item) => {
 				return(<li key={item}>
 							<StarRating rating={item} />
-							</li>)
+						</li>)
 			})}
-			
-							
-							</div>
-				<div className="left-column">
+			</div>
+			<div className="left-column">
 				<div className="headline">
-				<ul>
-					{this.props.headline.map((item) => {
-						return <li key={item}><p>{item}</p></li>
-					})}
-				</ul>
+					<ul>
+						{this.props.headline.map((item) => {
+							return <li key={item}><p>{item}</p></li>
+						})}
+					</ul>
 				</div>
 				<ul>
 					{this.props.comments.map((item) => {
@@ -32,18 +30,15 @@ class ReviewDetails extends Component {
 				<br/>
 				<div>Was this review helpful to you?</div>
 				<br/>
-
-
 				<Thumb onClick={this.myfunction} className="thumbup"/>
 				<Thumb onClick={this.myfunction} className="thumbdown"/>
-
-				</div>
-				<div className="right-column">
+			</div>
+			<div className="right-column">
 				<ul>
 					{this.props.created.map((item) => {
 						return( 
 							<li key={item}>
-								<p>Submitted {29-(parseInt((item).substring(3,5)))} days ago</p>
+								<p>Submitted {29-(parseInt((item).substring(3,5), 10))} days ago</p>
 							</li>
 							)
 					})}
@@ -68,7 +63,6 @@ class ReviewDetails extends Component {
 				</ul>
 				<ul>
 					{this.props.staffreviewer.map((item) => {
-						console.log(item)
 						return( 
 							<li key={item}>
 							{ item.toString()==='true' &&  <div> Staff Reviewer <StaffReviewer className="badge"/> </div>  }
@@ -78,7 +72,6 @@ class ReviewDetails extends Component {
 				</ul>
 				<ul>
 					{this.props.verifiedbuyer.map((item) => {
-						console.log(item)
 						return( 
 							<li key={item}>
 							{ item.toString()==='true' &&  <div> Verified Buyer <VerifiedBuyer className="badge"/> </div>  }
@@ -88,7 +81,6 @@ class ReviewDetails extends Component {
 				</ul>
 				<ul>
 					{this.props.verifiedreviewer.map((item) => {
-						console.log(item)
 						return( 
 							<li key={item}>
 							{ item.toString()==='true' &&  <div> Verified Reviewer <VerifiedReviewer className="badge"/> </div>  }
@@ -96,8 +88,8 @@ class ReviewDetails extends Component {
 							)
 					})}
 				</ul>
-				</div>
 			</div>
+		</div>
 		)
 	}
 }

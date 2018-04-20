@@ -1,5 +1,4 @@
 import * as React from "react";
-import {Thumb} from './icons';
 import IndexView from './components/index-view';
 
 class App extends React.Component {
@@ -16,15 +15,12 @@ class App extends React.Component {
 	componentDidMount() {
 	    fetch('/reviews')
 	            .then(res => {
-	                console.log(res);
 	                return res.json()
 	             })
 	            .then(data => { 
 	                this.setState({ reviews:data.reviews })
 	             });
 	}
-
-	
 
   	render() {
 	    return (
