@@ -29,7 +29,7 @@ yarn add ${pkg-name}
 
 | Command   | Description                                                                                                |
 | --------- | ---------------------------------------------------------------------------------------------------------- |
-| `start`   | Concurrently starts dev server and review service. **Your solution will be evaluated using this command.** |
+| `start`   | Concurrently starts dev server and review service.
 | `app`     | Starts webpack dev server on port 3000                                                                     |
 | `service` | Starts review service on port 5000                                                                         |
 
